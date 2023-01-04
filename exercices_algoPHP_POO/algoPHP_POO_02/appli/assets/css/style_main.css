@@ -1,0 +1,90 @@
+/********************************
+    style_main.css recap.php appli
+    =======================
+    By AHJ
+*********************************/
+
+*,
+::before,
+::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {/*
+    margin: 0px;*/
+    background-color: #f9e510;
+}
+p {
+    text-align: justify;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1024px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px auto;   
+}
+
+/**************** Nav *********/
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    width: 100%;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    margin: 0px;
+    padding: 5px;
+
+    background-color: #000000;
+}
+li {
+    display: inline-block;
+    
+    list-style: none;
+    margin: 5px 10px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+
+    line-height: 1.5em;
+}
+nav a:hover {   
+    color: rgb(19, 247, 68);
+}
+.accueil {
+    margin: 0px;
+}
+.listeProduits {
+    margin: 0px;
+}
+.recap {
+    margin: 0px;
+}
+.numRecap {
+    width: 60px;
+    height: 25px;
+    margin: 0px;
+    padding: 6px;
+    background-color: #025810;
+    border-radius: 4px;
+}
+/************** Main *********************/
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}

@@ -1,0 +1,105 @@
+/*
+*    style_appli_table.css => index.php => appli
+*   ============================================
+   By AHJ
+*/
+
+/********************** Article ***********************/
+/* espacement */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+thead th:nth-child(1) { /* # */
+    width: 5%;
+}
+thead th:nth-child(2) { /* Nom */
+    width: 35%;
+}
+thead th:nth-child(3) { /* Prix */
+    width: 10%;
+}
+thead th:nth-child(4) { /* Quant */
+    width: 15%;
+}
+thead th:nth-child(5) { /* Total */
+    width: 10%;
+}
+thead th:nth-child(6) { /* Actions */
+    width: 10%;
+}
+thead th:nth-child(7) { /* Catégories */
+    width: 15%;
+}
+th, td {
+    padding: 10px;
+}
+
+/* Normalement on déclare une police de caractère */
+/**/
+thead th, tfoot th {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    text-align: left;
+  }
+
+th {
+    letter-spacing: 1px;
+}
+  
+td {
+    letter-spacing: 1px;
+}
+  
+tbody td {
+    text-align: left;
+}
+.quantArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+thead, tfoot {
+    color: black;
+}
+
+thead th, tfoot th, tfoot td {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+  
+tbody tr {
+    background-image: url(#.png);
+    border-bottom: 1px solid rgb(0, 0, 0);
+} 
+.panierVide {
+    width: 300px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 50px auto;
+    
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+
+} 
+.boutonVidePanier {
+    display: block;
+    width: 140px;
+    height: 40px;
+    color: white;
+    padding: 10px;
+    background-color: rgb(167, 17, 17);
+    border-radius: 5px;
+}
+#imgMoins, #imgPlus {
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+}

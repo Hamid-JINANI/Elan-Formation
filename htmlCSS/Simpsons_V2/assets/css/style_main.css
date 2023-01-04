@@ -1,0 +1,213 @@
+/********************************
+    style_main.css index
+    =======================
+    By AHJ
+*********************************/
+
+*,
+::before,
+::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {/*
+    margin: 0px;*/
+    background-color: #f9e510;
+}
+p {
+    text-align: justify;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1024px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px auto;   
+}
+
+/********************* Header ******************/
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fff;
+    
+    background-color: #3e9fee;
+}
+#title_header {/**/
+    height: 50px;
+    font-size: 1.7em;
+    font-style: italic;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_header {
+    width: 100%;
+
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/**************** Nav *********/
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #3e9fee;
+    border-bottom: 3px dashed #fff;
+}
+ul {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+    padding: 5px;
+
+    background-color: #3e9fee;
+}
+li {
+    display: inline-block;
+    
+    list-style: none;
+    margin: 5px 10px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+
+    line-height: 1.5em;
+}
+nav a:hover {   
+    color: rgb(19, 247, 68);
+}
+.home {
+    margin: 0px;
+}
+.movie {
+    margin: 0px;
+}
+.caracters {
+    margin: 0px;
+}
+.story {
+    margin: 0px;
+}
+.author {
+    margin: 0px;
+}
+/************** Main *********************/
+main {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+/********************** Article ***********************/
+article {
+    margin: 0px;
+    padding: 10px;
+}
+#title_section {
+    font-size: 2em;
+    color: #f9e510;
+    margin: 20px 0px 0px 0px;
+}
+#presentation {
+    margin: 20px 0px 20px 0px;
+}
+.posters_movie {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 30px 0px 0px 0px;
+    padding: 0px;
+}
+
+.poster{    
+    width: 240px;
+    height: 275px;
+
+    margin: 10px;
+/*
+    display: inline-block;
+*/
+    overflow: hidden;
+
+    border: 1px solid black;
+}
+.poster1, .poster2, .poster3 {
+    width: 240px;
+}
+
+/********** Aside ****************/
+aside {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    margin: 90px 10px 10px 10px;
+    padding: 10px;
+
+    background-color: #3e9fee;
+}
+#author {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0px;
+    padding: 0px;
+}
+.presentation_author {
+    margin: 0px;
+    padding: 0px;
+}
+#img_author{
+    width: 200px;
+
+    margin: 0px auto;
+
+    border: 2px solid #fff;
+}
+
+figcaption {
+    font-size: 1.4em;
+    color: #fff;
+    
+    text-align: center;
+
+    margin: 0px;
+    padding: 0px;
+}
+.profession {
+    color: #fff;
+
+    text-align: center;
+
+    margin: 0px;
+    padding: 0px;
+}
+/****************** Footer *******************/
+footer {
+    height: 50px;
+    font-size: 1.4em;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #0567b8;
+}

@@ -1,0 +1,93 @@
+/*
+    style_glossary_table.css => index.php => dev_glossary
+    ============================================
+    By AHJ
+*/
+
+/********************** Article ***********************/
+/* espacement */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid rgb(34, 33, 33);
+}
+thead th:nth-child(1) {
+    width: 15%;
+}
+thead th:nth-child(2) {
+    width: 20%;
+}
+thead th:nth-child(3) {
+    width: 50%;
+}
+thead th:nth-child(4) {
+    width: 10%;
+}
+th, td {
+    padding: 10px;
+}
+
+/* Normalement on déclare une police de caractère */
+/**/
+thead th, tfoot th {
+    font-family: cursive;
+  }
+
+
+th {
+    letter-spacing: 1px;
+}
+  
+td {
+    letter-spacing: 1px;
+}
+  
+tbody td {
+    text-align: center;
+}
+/*
+tfoot th {
+    text-align: right;
+  }
+*/
+
+thead, tfoot {
+    background: url(#.jpg);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+thead th, tfoot th, tfoot td {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+    border: 3px solid rgb(40, 155, 250);
+}
+
+/* Alternance de couleur */
+
+tbody tr:nth-child(odd) {
+    background-color: #cecfcf;
+}
+  
+tbody tr:nth-child(even) {
+    background-color: #959697;
+}
+  
+tbody tr {
+    background-image: url(#.png);
+}
+ /* 
+table {
+    background-color: #ff4b33;
+}
+*/  
+
+caption {
+    padding: 15px;
+    font-style: italic;
+    caption-side: top;
+    color: #666;
+    text-align: left;
+    letter-spacing: 1px;
+}

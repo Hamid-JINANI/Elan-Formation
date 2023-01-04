@@ -1,0 +1,217 @@
+/********************************
+    style_main.css index
+    =======================
+    By AHJ
+*********************************/
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    margin: 0px;
+    background-color: #f9e510;
+}
+p {
+    text-align: justify;
+}
+#grid {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto 40px;
+
+    grid-template-areas: 
+        "header header header header header"
+        "nav main main main main"
+        "footer footer footer footer footer";
+
+    max-width: 1024px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px auto;   
+}
+
+/********************* Header ******************/
+header {
+    grid-area: header;
+ 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto;
+    grid-template-areas: 
+        "title_header"
+        "img_header";
+
+    grid-column-start: 1;
+    grid-column-end: 6;
+
+    color: #fff;
+    
+    background-color: #103bf9;
+}
+#title_header {
+    grid-area: title_header;
+
+    font-size: 1.7em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_header {
+    grid-area: img_header;
+
+    width: 100%;
+}
+
+/**************** Nav *********/
+nav {
+    grid-area: nav;
+    column-width: 300px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    background-color: #fff;
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+ul {
+    margin: 10px;
+    padding: 10px;
+    background-color: #103bf9;
+}
+nav a {
+    color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    line-height: 1.5em;
+
+    text-decoration: underline;
+}
+nav a:hover {   
+    color: rgb(19, 247, 68);
+}
+
+/************** Main *********************/
+main {
+    grid-area: main;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "article aside";
+
+    grid-column-start: 2;
+    grid-column-end: 6;  
+    
+    background-color: #fff;
+}
+
+/********************** Article ***********************/
+article {
+    grid-area: article;
+    column-width: auto;
+
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px auto;
+    grid-template-areas: 
+        "title_section"
+        "presentation";
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+    padding: 10px;
+}
+#title_section {
+    grid-area: title_section;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    color: #f9e510;
+}
+.presentation {
+    grid-area: presentation;
+}
+
+/********** Aside ****************/
+aside {
+    grid-area: aside;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "figure"
+        "presentation_author";
+
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+    color: #fff;
+
+    margin: 10px;
+    padding: 10px;
+
+    background-color: #103bf9;
+}
+figure {
+    grid-area: figure;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "img"
+        "figcaption";
+}
+.presentation_author {
+    grid-area: presentation_author;
+}
+#img_author{
+    grid-area: img;
+
+    width: 150px;
+    margin: 0px auto;
+
+    border: 2px solid #fff;
+}
+
+figcaption {
+    grid-area: figcaption;
+
+    font-size: 1.4em;
+    color: #fff;
+
+    margin: 0px auto;
+}
+
+/****************** Footer *******************/
+footer {
+    grid-area: footer;
+        
+    grid-column-start: 1;
+    grid-column-end: 6;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #103bf9;
+}

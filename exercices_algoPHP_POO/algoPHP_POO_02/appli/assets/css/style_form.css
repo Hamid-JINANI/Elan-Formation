@@ -1,0 +1,54 @@
+
+/********************** Form ***********************/
+form {   
+    width: 60%;
+
+    margin: 20px auto;
+    padding: 10px;
+
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
+fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;   
+}
+#fieldsetText {
+    border-radius: 5px;
+}
+#inputArea {
+    display: flex;
+    flex-direction: column;
+}
+#inputTextLabel {
+    font-size: 1.05em;
+    width: 200px;
+}
+#inputText {
+    width: 150px;
+
+    margin: 10px 0px 5px 0px;
+}
+textarea {
+    vertical-align: top;
+}
+  
+#fieldsetButtonR {
+    font-size: 1.05em;
+    border-radius: 5px;
+}
+#ajoutProduit {
+    font-size: 1.05em;
+
+    width: 80px;
+    height: 30px;
+
+    margin: 10px auto;
+    padding: 5px;
+    
+    border: 1px solid grey;
+    border-radius: 5px 5px 5px 5px;
+}
